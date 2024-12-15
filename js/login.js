@@ -9,7 +9,7 @@ function tryLogin(){
 
     if(un.trim()!=="" && pw.trim()!==""){
 alert("can connect");
-$.ajax({
+/*$.ajax({
     url:"ajaxhandler/loginAjax.php",
     type:"POST",
    dataType:"json",
@@ -32,44 +32,10 @@ alert(JSON.stringify(rv));
 alert("opps something went wrong");
    },
 });
-
+*/
    
 }}
 
-      /* $.ajax({
-            url:"ajaxhandler/loginAjax.php",
-            type:"POST",
-           dataType:"json",
-           data:{user_name:un,password:pw,action:"verifyUser"},
-
-          beforeSend: function () {
-         // $("#diverror").removeClass("applyerrordiv");
-//$("#errormessage").text("");
-//$("#lockscreen").addClass("applylockscreen");
-},
-success:function(rv){
-
-            //$("#lockscreen").removeClass("applylockscreen");
-
-if(rv["status"]=="ALL OK")
-{
-document.location.replace("attendance.php");
-}
-else{
-alert(rv["status"]);
-//$("#diverror").addClass("applyerrordiv");
-//$("#errormessage").text(rv['status']);
-}
-},
-
-error:function(data){
-alert("oops! Something went wrong");
-},
-
-});
-    }
-}
-*/
 //do everything only when the document is loaded
 $(function(e){
     
