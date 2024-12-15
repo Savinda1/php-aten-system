@@ -8,7 +8,7 @@ function tryLogin(){
     let pw=$("#password").val();
 
     if(un.trim()!=="" && pw.trim()!==""){
-//alert("can connect");
+alert("can connect");
 $.ajax({
     url:"ajaxhandler/loginAjax.php",
     type:"POST",
